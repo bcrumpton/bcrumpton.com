@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Source Serif Pro", sans-serif;
+    background: #f8f8f0;
+}
+
+a {
+    color: #750d37;
+    transition: all .3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #210124;
+    transition: all .3s ease-in-out;
+}
+
+.dark-purple {
+    color: #210124;
+}
+
+h1 {
+    font-size: 4.75rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.25rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+p {
+    color: #210124;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Introduction */
+
+.intro {
+    display: flex;
+}
+
+.intro-left,
+.intro-right {
+    width: 50%;
+}
+
+/* SVG Animation */
+
+#inner-ring {
+    animation: turn-left 50s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#outer-ring {
+    animation: turn-right 50s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#right-mug,
+#left-mug {
+    animation: up-down 1.5s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(2.5%);
+    }
+    to {
+        transform: translateY(-2.5%);
+    }
+}
+
+@keyframes turn-left {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes turn-right {
+    from {
+        transform: rotateZ(360deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}

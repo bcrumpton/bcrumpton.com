@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/main.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/6c8d926e2b.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <h4><a href="/">bcrumpton</a></h4>
+            </div>
+        </header>
+
+        {% if page.url == "/" %}
+            <section class="introduction">
+                <div class="container">
+                    <div class="intro">
+                        <div class="intro-left">
+                            <h1 class="dark-purple">Hi! 👋</h1>
+                            <h2 class="dark-purple">I'm Brannon.</h2> 
+                            <h2 class="dark-purple">A front end developer</br> and freelancer.</h2>
+                        </div>
+                        <div class="intro-right">
+                            {{ '/beer-celebration.svg' | svgContents }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <main>
+            <div class="container">
+                {{ content | safe }}
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; Brannon Crumpton</p>
+                    <div class="socials">
+                        <a href="https://github.com/bcrumpton"><i class="fab fa-github"></i></a>
+                        <a href="mailto:crumptonbrannon@gmail.com"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
