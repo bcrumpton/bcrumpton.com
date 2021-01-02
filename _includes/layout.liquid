@@ -14,28 +14,37 @@
 
         <header>
             <div class="container">
-                <h4><a href="/">bcrumpton</a></h4>
+                <div class="masthead">
+                    <h4><a href="/">bcrumpton</a></h4>
+                    <nav class="nav">
+                        <ul class="nav__menu">
+                            <li class="nav__menu-item"><a href="/work">Work</a></li>
+                            <li class="nav__menu-item"><a href="/blog">Blog</a></li>
+                            <li class="nav__menu-item"><a href="/about">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
-        {% if page.url == "/" %}
-            <section class="introduction">
-                <div class="container">
-                    <div class="intro">
-                        <div class="intro-left">
-                            <h1 class="dark-purple">Hi! 👋</h1>
-                            <h2 class="dark-purple">I'm Brannon.</h2> 
-                            <h2 class="dark-purple">A front end developer</br> and freelancer.</h2>
-                        </div>
-                        <div class="intro-right">
-                            {{ '/beer-celebration.svg' | svgContents }}
+        <main>
+            {% if page.url == "/" %}
+                <section class="introduction">
+                    <div class="container">
+                        <div class="intro">
+                            <div class="intro-left">
+                                <h1 class="dark-purple">Hi! 👋</h1>
+                                <h2 class="dark-purple">I'm Brannon.</h2> 
+                                <h2 class="dark-purple">A front end developer</br> and freelancer.</h2>
+                            </div>
+                            <div class="intro-right">
+                                {{ '/beer-celebration.svg' | svgContents }}
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        {% endif %}
-
-        <main>
+                </section>
+            {% endif %}
+            
             <div class="container">
                 {{ content | safe }}
             </div>

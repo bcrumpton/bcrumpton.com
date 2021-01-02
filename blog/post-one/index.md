@@ -1,11 +1,13 @@
 ---
-title: Welcome to my new portfolio!
+title: Hogwarts Legacy
+layout: "layout.liquid"
+tags: "blog"
 ---
 
 # {{ title }}
 
 ![Hogwarts Legacy cover](./images/hogwarts-legacy.jpg)
 
-### this is the new home of bcrumpton.com
+### I am so fucking stoked for this game
 
-I am glad you're here.
+I get to go to Hogwarts, learn and then become an Auror myself? Are you kidding me?
