@@ -8,7 +8,7 @@ layout: layout.liquid
 ### A drumming🥁, coding👨‍💻, cycling🚴‍♂️ friend
 #### Originally from SC -> Now living in TN
 
-I've been playing drums since 2003. I currently play in a band called Moru. It is one of the most fun things in my life and I wouldn't stop for anything.
+I've been playing drums since 2003. I currently play in a band called Moru.
 
 ![Show at Insanity Skate Park](images/drumming.jpg)
 

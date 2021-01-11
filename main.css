@@ -68,9 +68,11 @@ p {
     padding-left: 10px;
 }
 
-/* main {
-    height: calc(100vh - 209px);
-} */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* Footer */
 
