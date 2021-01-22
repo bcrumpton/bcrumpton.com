@@ -1,165 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&display=swap");
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-    max-width: 65rem;
-    margin: 0 auto;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: "Source Serif Pro", sans-serif;
-    background: #f8f8f0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100%;
-    margin: 0;
+  font-family: "Source Serif Pro", sans-serif;
+  background: #f8f8f0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  margin: 0;
 }
 
 a {
-    color: #750d37;
-    transition: all .3s ease-in-out;
+  color: #750d37;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover,
 a:focus {
-    color: #210124;
-    transition: all .3s ease-in-out;
+  color: #210124;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-purple {
-    color: #210124;
+  color: #210124;
 }
 
 h1 {
-    font-size: 4.75rem;
+  font-size: 3.75rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 4rem;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h3 {
-    font-size: 3.25rem;
+  font-size: 2.25rem;
 }
 
 h4 {
-    font-size: 2.5rem;
-    margin: 0 1rem 0 0;
+  font-size: 1.5rem;
+  margin: 0 1rem 0 0;
 }
 
 p {
-    color: #210124;
+  color: #210124;
 }
 
 .socials i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .socials a:not(:first-of-type) {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Footer */
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Introduction */
 
 .intro {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro-left,
 .intro-right {
-    width: 50%;
+  width: 100%;
+}
+
+.intro-left {
+  text-align: center;
+}
+
+.intro-right {
+  display: flex;
+  align-items: center;
 }
 
 /* SVG Animation */
 
 #inner-ring {
-    animation: turn-left 50s linear infinite;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: turn-left 50s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 #outer-ring {
-    animation: turn-right 50s linear infinite;
-    transform-origin: center;
-    transform-box: fill-box;
+  animation: turn-right 50s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 #right-mug,
 #left-mug {
-    animation: up-down 1.5s ease-in-out infinite;
-    animation-direction: alternate;
+  animation: up-down 1.5s ease-in-out infinite;
+  animation-direction: alternate;
 }
 
 @keyframes up-down {
-    from {
-        transform: translateY(2.5%);
-    }
-    to {
-        transform: translateY(-2.5%);
-    }
+  from {
+    transform: translateY(2.5%);
+  }
+  to {
+    transform: translateY(-2.5%);
+  }
 }
 
 @keyframes turn-left {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @keyframes turn-right {
-    from {
-        transform: rotateZ(360deg);
-    }
-    to {
-        transform: rotateZ(0deg);
-    }
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
 }
 
 .masthead {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .masthead a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .masthead nav {
-    display: flex;
+  display: flex;
 }
 
 .masthead .nav .nav__menu {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .masthead .nav .nav__menu-item:not(:first-of-type) {
-    padding-left: 1rem;
-} 
+  padding-left: 1rem;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 4.75rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 3.25rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+    margin: 0 1rem 0 0;
+  }
+
+  .intro {
+    flex-direction: row;
+  }
+
+  .intro-left {
+    text-align: left;
+  }
+}
