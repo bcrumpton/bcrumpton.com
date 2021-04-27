@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "surge dist random-joke.bcrumpton.com"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
