@@ -9,10 +9,13 @@ layout: layout.liquid
 
 <div class="work">
 
-    {%- for work in collections.work -%}
+    {%- for work in collections.work reversed -%}
 
         <div class="work__item">
-            <h4><a href="{{work.url}}">{{work.data.title}}</a></h4>
+            <h4>
+                <a href="{{work.url}}">{{ work.data.title }}</a>
+                <small>{{ work.data.completeDate }}</small>
+            </h4>
             <p>{{ work.data.tech }}</p>
         </div>
     
